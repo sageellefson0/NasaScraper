@@ -4,5 +4,5 @@ response = requests.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosit
 print(response.status_code)
 print(response.json)
 
-img = response.json()['photos'][100]['img_src']
+img = response.json()['photos'][0]['img_src']
 print(img)
